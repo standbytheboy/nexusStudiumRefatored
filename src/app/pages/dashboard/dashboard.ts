@@ -4,7 +4,7 @@ import { FollowingList } from "../../shared/following-list/following-list";
 import { DailyGoals } from "../../shared/daily-goals/daily-goals";
 import { StudiedTopics } from "../../shared/studied-topics/studied-topics";
 import { RecentExercisesComponent } from "../../shared/recent-exercises/recent-exercises";
-import { SearchBar } from "../../search-bar/search-bar";
+import { SearchBar } from "../../layout/search-bar/search-bar";
 
 @Component({
   selector: 'app-dashboard',

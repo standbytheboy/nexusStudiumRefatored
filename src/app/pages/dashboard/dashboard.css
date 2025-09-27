@@ -1,6 +1,5 @@
 :host {
   display: block;
-  /* Ajuste a margem para não ficar embaixo da sidebar */
   margin-left: 350px; 
   padding: 24px 40px;
 }
