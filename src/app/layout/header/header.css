@@ -1,0 +1,40 @@
+* {
+    color: #E8F4FC;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "ABeeZee", sans-serif;
+}
+
+.background {
+    background-color: #2A5D84;
+    padding-top: 30px;
+}
+
+.header {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 85px;
+    cursor: pointer;
+}
+
+nav ul {
+    max-width: 700px;
+    list-style-type: none;
+    gap: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #5D5791, #9747FF);
+}

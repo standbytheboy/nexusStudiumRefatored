@@ -1,0 +1,38 @@
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  position: relative; /* Para posicionar o botão */
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  line-height: 1.4;
+}
+
+.greeting {
+  font-weight: 600;
+  margin: 0;
+}
+
+.email {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: auto; /* Empurra o botão para a direita */
+}

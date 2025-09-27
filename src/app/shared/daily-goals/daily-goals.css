@@ -1,0 +1,40 @@
+.widget {
+  background-color: var(--widget-bg);
+  padding: 24px;
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 30px; /* Espaçamento entre widgets */
+}
+
+.widget-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-bg);
+  padding: 16px;
+  border-radius: var(--border-radius-md);
+  margin-bottom: 12px;
+}
+
+.goal-info .name {
+  font-weight: 500;
+  display: block;
+}
+
+.goal-info .subject {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.goal-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--text-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}

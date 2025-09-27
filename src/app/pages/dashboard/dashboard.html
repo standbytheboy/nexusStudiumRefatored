@@ -1,0 +1,28 @@
+<app-search-bar></app-search-bar>
+<main class="dashboard-content">
+
+  <nav class="content-tabs">
+    <a href="#" class="tab-item active">Em Progresso</a>
+    <a href="#" class="tab-item">Próximos Estudos</a>
+    <a href="#" class="tab-item">Finalizados</a>
+  </nav>
+
+  <section class="courses-in-progress">
+    <app-course-card
+      *ngFor="let course of inProgressCourses"
+      [title]="course.title"
+      [type]="course.type"
+      [progress]="course.progress">
+    </app-course-card>
+  </section>
+
+  <div class="dashboard-grid">
+    <app-following-list [followedUsers]="followedUsers"></app-following-list>
+    <app-daily-goals [goals]="dailyGoals"></app-daily-goals>
+  </div>
+
+  <app-studied-topics [topics]="studiedTopics"></app-studied-topics>
+
+  <app-recent-exercises [exercises]="recentExercises"></app-recent-exercises>
+
+</main>
