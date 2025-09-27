@@ -19,9 +19,7 @@
     font-size: 20px;
 }
 
-svg {
-    fill: #E8F4FC;
-    width: 30px;
+.ai-bell {
     cursor: pointer;
 }
 
@@ -37,18 +35,16 @@ svg {
 
 .bg-search {
     width: 350px;
-    height: 30px;
-    background-color: #E8F4FC;
-    border: 1px solid #202850;
+    height: 40px;
+    background-color: #E8F4FC90;
     border-radius: 30px;
     display: flex;
     align-items: center;
     color: #202850;
 }
 
-.search-button svg {
-    fill: #777;
-    width: 20px;
+.ai-search {
+    stroke: #777;
     margin-right: 20px;
 }
 
