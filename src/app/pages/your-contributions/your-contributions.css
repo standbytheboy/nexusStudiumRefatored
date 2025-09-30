@@ -1,0 +1,64 @@
+:host {
+  display: block;
+  margin-left: 350px; /* Mesma margem do dashboard */
+  padding: 24px 40px;
+  font-family: 'Inter', sans-serif;
+  color: #E8F4FC;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 24px 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.main-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 1200px) {
+  :host {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  :host {
+    padding: 24px 20px;
+  }
+}

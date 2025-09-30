@@ -1,11 +1,11 @@
 <div class="course-card">
-  <div class="card-container" *ngFor="let course of courses">
+  <div class="card-container" *ngIf="course">
     <div class="card-icon-container">
       <span class="material-symbols-outlined">design_services</span>
     </div>
     <div class="card-info">
       <h3 class="card-title">{{ course.title }}</h3>
-      <hr>
+      <hr />
       <div class="card-footer">
         <span class="card-type">{{ course.type }}</span>
         <span class="card-progress">{{ course.progress }}</span>

@@ -9,7 +9,7 @@
 
   <h2 class="section-title">Cursos em Progresso</h2>
   <section class="courses-in-progress">
-    <app-course-card [courses]="inProgressCourses">
+    <app-course-card *ngFor="let course of inProgressCourses" [course]="course">
     </app-course-card>
   </section>
 

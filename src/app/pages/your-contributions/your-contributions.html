@@ -1,0 +1,22 @@
+<main class="contributions-content">
+  <app-search-bar></app-search-bar>
+  <h1 class="page-title">Suas Contribuições</h1>
+
+  <h2 class="section-title">Vídeos</h2>
+  <section class="videos-grid">
+    <app-course-card *ngFor="let video of videoContributions" [course]="video"></app-course-card>
+  </section>
+
+  <h2 class="section-title">Dados Relevantes/Métricas</h2>
+  <section class="metrics-grid">
+    <app-metric-card *ngFor="let metric of metrics" [metric]="metric"></app-metric-card>
+  </section>
+
+  <div class="main-grid">
+  <app-comparison-chart></app-comparison-chart>
+  <div class="comments-section">
+      <h2 class="section-title">Comentários feitos para você</h2>
+      <app-user-comment *ngFor="let comment of userComments" [comment]="comment"></app-user-comment>
+  </div>
+</div>
+</main>

@@ -9,8 +9,7 @@
 .content-tabs {
   display: flex;
   gap: 24px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid #3d6e91;
+  margin: 24px 0;
 }
 
 .tab-item {
@@ -24,11 +23,11 @@
 
 .tab-item.active {
   color: #FFFFFF;
-  border-bottom-color: #5D5FEF;
+  font-weight: bold;
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 40px 0 20px 0;
 }

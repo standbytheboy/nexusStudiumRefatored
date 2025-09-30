@@ -1,0 +1,17 @@
+<div class="widget" *ngIf="comment">
+  <div class="comments-list">
+    <div class="comment-item">
+      <div class="comment-icon">
+        <span class="material-symbols-outlined">forum</span>
+      </div>
+      <div class="comment-info">
+        <span class="comment-date">{{ comment.date }}</span>
+        <span class="comment-user">{{ comment.userName }}</span>
+      </div>
+      <span class="comment-tag">{{ comment.type }}</span>
+      <button class="arrow-button">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+    </div>
+  </div>
+</div>

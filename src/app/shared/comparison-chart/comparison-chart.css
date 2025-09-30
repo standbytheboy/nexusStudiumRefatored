@@ -1,0 +1,29 @@
+.chart-widget {
+  background-color: var(--secondary-bg);
+  padding: 24px;
+  border-radius: var(--border-radius);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.widget-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.chart-tabs .tab {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.chart-container {
+  height: 250px; /* Defina uma altura para o gráfico */
+  position: relative;
+}

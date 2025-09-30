@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
-interface Courses {
-  title: string,
-  type: string,
-  progress: string
+export interface Course {
+  title: string;
+  type: string;
+  progress: string;
 }
 
 @Component({
@@ -15,5 +15,5 @@ interface Courses {
   styleUrls: ['./course-card.css']
 })
 export class CourseCardComponent {
-  @Input() courses: Courses[] = [];
+  @Input() course: Course | null = null;
 }

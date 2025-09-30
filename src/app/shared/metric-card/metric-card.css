@@ -1,0 +1,43 @@
+.metric-card {
+  background-color: var(--secondary-bg);
+  padding: 24px;
+  border-radius: var(--border-radius);
+}
+
+.metric-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.metric-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.metric-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.metric-change {
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.metric-change.positive {
+  background-color: rgba(60, 255, 60, 0.1);
+  color: #3CFF3C;
+}
+
+.metric-change.negative {
+  background-color: rgba(255, 60, 60, 0.1);
+  color: #FF3C3C;
+}
