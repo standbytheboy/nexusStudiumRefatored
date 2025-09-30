@@ -36,10 +36,10 @@ export class DashboardComponent {
   studiedTopics = [
     { title: 'UX/UI Design', progress: '1/3' },
     { title: 'UX/UI Design', progress: '1/3' },
-    { title: 'UX/UI Design', progress: '1/3' }
   ];
 
   recentExercises = [
+    { date: '07/03/25', instructor: 'Nome do Instrutor', tag: 'UX/UI Design', description: 'Descrição do Exercício' },
     { date: '07/03/25', instructor: 'Nome do Instrutor', tag: 'UX/UI Design', description: 'Descrição do Exercício' },
   ];
 }
