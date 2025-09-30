@@ -6,7 +6,6 @@ interface Topics {
   progress: string
 
 }
-
 @Component({
   selector: 'app-studied-topics',
   imports: [CommonModule],
