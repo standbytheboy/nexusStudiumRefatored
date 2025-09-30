@@ -1,1 +1,12 @@
-<p>daily-goals works!</p>
+<div class="widget">
+  <h2 class="widget-title">Metas Diárias</h2>
+  <div class="goals-list">
+    <div class="goal-item" *ngFor="let goal of goals">
+      <div class="goal-info">
+        <span class="name">{{ goal.name }}</span>
+        <span class="subject">{{ goal.subject }}</span>
+      </div>
+      <div class="goal-checkbox"></div>
+    </div>
+  </div>
+</div>

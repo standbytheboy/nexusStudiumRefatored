@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 interface FollowedUser {
@@ -8,7 +9,7 @@ interface FollowedUser {
 
 @Component({
   selector: 'app-following-list',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './following-list.html',
   styleUrl: './following-list.css'
 })

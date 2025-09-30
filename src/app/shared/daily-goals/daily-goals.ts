@@ -1,12 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 interface Goals {
-
+  name: string,
+  subject: string
 }
 
 @Component({
   selector: 'app-daily-goals',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './daily-goals.html',
   styleUrl: './daily-goals.css'
 })

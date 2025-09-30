@@ -1,16 +1,21 @@
-<section class="widget">
+<div class="widget">
   <h2 class="widget-title">Últimos Exercícios</h2>
   <div class="exercise-list">
     <div class="exercise-item" *ngFor="let exercise of exercises">
-      <div class="exercise-icon">
-        </div>
+      <div class="exercise-icon-container">
+        <span class="material-symbols-outlined">exercise</span>
+      </div>
       <div class="exercise-details">
         <span class="exercise-date">{{ exercise.date }}</span>
         <span class="exercise-instructor">{{ exercise.instructor }}</span>
       </div>
-      <div class="exercise-tag">{{ exercise.tag }}</div>
+      <div class="exercise-tag-container">
+        <span class="exercise-tag">{{ exercise.tag }}</span>
+      </div>
       <p class="exercise-description">{{ exercise.description }}</p>
-      <button class="arrow-button">&gt;</button>
+      <button class="arrow-button">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
     </div>
   </div>
-</section>
+</div>

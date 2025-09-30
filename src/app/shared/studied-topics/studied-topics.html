@@ -1,1 +1,14 @@
-<p>studied-topics works!</p>
+<div class="widget">
+  <h2 class="widget-title">Tópicos Estudados</h2>
+  <div class="topics-list">
+    <div class="topic-item" *ngFor="let topic of topics">
+      <div class="topic-icon">
+        <span class="material-symbols-outlined">design_services</span>
+      </div>
+      <div class="topic-info">
+        <span class="topic-title">{{ topic.title }}</span>
+        <span class="topic-progress">Assistidos: {{ topic.progress }}</span>
+      </div>
+    </div>
+  </div>
+</div>

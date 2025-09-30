@@ -1,1 +1,12 @@
-<p>following-list works!</p>
+<div class="widget">
+  <h2 class="widget-title">Quem eu sigo</h2>
+  <div class="following-grid">
+    <div class="user-item" *ngFor="let user of followedUsers">
+      <img [src]="user.avatarUrl" [alt]="user.name" class="avatar">
+      <div>
+        <p class="user-name">{{ user.name }}</p>
+        <p class="user-role">{{ user.role }}</p>
+      </div>
+    </div>
+  </div>
+</div>

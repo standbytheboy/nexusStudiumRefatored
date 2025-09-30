@@ -1,5 +1,5 @@
-<app-search-bar></app-search-bar>
 <main class="dashboard-content">
+  <app-search-bar></app-search-bar>
 
   <nav class="content-tabs">
     <a href="#" class="tab-item active">Em Progresso</a>
@@ -7,6 +7,7 @@
     <a href="#" class="tab-item">Finalizados</a>
   </nav>
 
+  <h2 class="section-title">Cursos em Progresso</h2>
   <section class="courses-in-progress">
     <app-course-card
       *ngFor="let course of inProgressCourses"
@@ -17,12 +18,13 @@
   </section>
 
   <div class="dashboard-grid">
-    <app-following-list [followedUsers]="followedUsers"></app-following-list>
-    <app-daily-goals [goals]="dailyGoals"></app-daily-goals>
+    <div class="main-column">
+      <app-following-list [followedUsers]="followedUsers"></app-following-list>
+      <app-recent-exercises [exercises]="recentExercises"></app-recent-exercises>
+    </div>
+    <div class="side-column">
+      <app-daily-goals [goals]="dailyGoals"></app-daily-goals>
+      <app-studied-topics [topics]="studiedTopics"></app-studied-topics>
+    </div>
   </div>
-
-  <app-studied-topics [topics]="studiedTopics"></app-studied-topics>
-
-  <app-recent-exercises [exercises]="recentExercises"></app-recent-exercises>
-
 </main>
