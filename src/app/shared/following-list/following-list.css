@@ -41,3 +41,9 @@
   color: #B0B8C4;
   margin: 0;
 }
+
+@media (max-width: 576px) {
+  .following-grid {
+    grid-template-columns: 1fr;
+  }
+}
