@@ -41,5 +41,6 @@ export class YourContributions {
     { date: '07/03/25', userName: 'Nome do Usuário', type: 'Vídeo' },
     { date: '07/03/25', userName: 'Nome do Usuário', type: 'Vídeo' },
     { date: '07/03/25', userName: 'Nome do Usuário', type: 'Vídeo' },
+    { date: '07/03/25', userName: 'Nome do Usuário', type: 'Vídeo' },
   ];
 }

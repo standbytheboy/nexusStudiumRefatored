@@ -1,7 +1,6 @@
 .widget {
-  background-color: var(--secondary-bg);
-  padding: 24px;
   border-radius: var(--border-radius);
+  display: flex;
 }
 
 .widget-title {
@@ -21,7 +20,7 @@
   align-items: center;
   gap: 16px;
   padding: 12px;
-  background-color: var(--primary-bg);
+  background-color: var(--secondary-bg);
   border-radius: 8px;
 }
 

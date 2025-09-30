@@ -1,7 +1,5 @@
 .course-card {
-  background-color: var(--secondary-bg);
   border-radius: var(--border-radius);
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   gap: 15px;
