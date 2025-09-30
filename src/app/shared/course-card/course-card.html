@@ -1,12 +1,15 @@
 <div class="course-card">
-  <div class="card-icon-container">
-    <i class="icon-design"></i>
-  </div>
-  <div *ngFor="let course of courses">
-    <h3 class="card-title">{{ course.title }}</h3>
-  <div class="card-footer">
-    <span class="card-type">{{ course.type }}</span>
-    <span class="card-progress">{{ course.progress }}</span>
-  </div>
+  <div class="card-container" *ngFor="let course of courses">
+    <div class="card-icon-container">
+      <span class="material-symbols-outlined">design_services</span>
+    </div>
+    <div class="card-info">
+      <h3 class="card-title">{{ course.title }}</h3>
+      <hr>
+      <div class="card-footer">
+        <span class="card-type">{{ course.type }}</span>
+        <span class="card-progress">{{ course.progress }}</span>
+      </div>
+    </div>
   </div>
 </div>
