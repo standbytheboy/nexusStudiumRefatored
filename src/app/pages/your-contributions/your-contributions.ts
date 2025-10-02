@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SearchBar } from '../../layout/search-bar/search-bar';
 import { CourseCardComponent, Course } from '../../shared/course-card/course-card';
 import { Metric, MetricCard } from '../../shared/metric-card/metric-card';
-import { ComparisonChart } from '../../shared/comparison-chart/comparison-chart';
+import { ComparisonChartComponent } from '../../shared/comparison-chart/comparison-chart';
 import { UserComment, UserCommentComponent } from '../../shared/user-comment/user-comment';
 
 @Component({
@@ -14,7 +14,7 @@ import { UserComment, UserCommentComponent } from '../../shared/user-comment/use
     SearchBar,
     CourseCardComponent,
     MetricCard,
-    ComparisonChart,
+    ComparisonChartComponent,
     UserCommentComponent
   ],
   templateUrl: './your-contributions.html',

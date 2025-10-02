@@ -5,15 +5,16 @@ import { DailyGoals } from "../../shared/daily-goals/daily-goals";
 import { StudiedTopics } from "../../shared/studied-topics/studied-topics";
 import { RecentExercisesComponent } from "../../shared/recent-exercises/recent-exercises";
 import { SearchBar } from "../../layout/search-bar/search-bar";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   templateUrl: './dashboard.html',
   styleUrls: ['./dashboard.css'],
-  imports: [CourseCardComponent, FollowingList, DailyGoals, StudiedTopics, RecentExercisesComponent, SearchBar]
+  imports: [CommonModule, CourseCardComponent, FollowingList, DailyGoals, StudiedTopics, RecentExercisesComponent, SearchBar]
 })
-export class DashboardComponent {
+export class Dashboard {
   inProgressCourses = [
     { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
     { title: 'Design Digital', type: 'Trilha', progress: '1/3' },

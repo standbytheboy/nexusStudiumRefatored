@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BaseChartDirective } from 'ng2-charts';
-import { ChartConfiguration, ChartType } from 'chart.js';
+import { ChartConfiguration, ChartType, Chart, registerables } from 'chart.js'; // Importe Chart e registerables
 
 @Component({
   selector: 'app-comparison-chart',
@@ -9,8 +9,13 @@ import { ChartConfiguration, ChartType } from 'chart.js';
   templateUrl: './comparison-chart.html',
   styleUrls: ['./comparison-chart.css']
 })
-export class ComparisonChart {
+export class ComparisonChartComponent {
   public lineChartType: ChartType = 'line';
+
+  constructor() {
+    // Registre todos os componentes do Chart.js
+    Chart.register(...registerables);
+  }
 
   public lineChartData: ChartConfiguration['data'] = {
     labels: ['Fev', '15 Fev', 'Mar', '15 Mar', '(Hoje)'],
@@ -47,7 +52,7 @@ export class ComparisonChart {
     maintainAspectRatio: false,
     elements: {
       point: {
-        radius: 0 // Esconde os pontos nos dados
+        radius: 0
       }
     },
     scales: {
@@ -58,6 +63,9 @@ export class ComparisonChart {
         ticks: { color: 'var(--text-secondary)' }
       },
       y: {
+        border: {
+          dash: [5, 5] 
+        },
         grid: {
           color: 'rgba(176, 184, 196, 0.2)',
         },
