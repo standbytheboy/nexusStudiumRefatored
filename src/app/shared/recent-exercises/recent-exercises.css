@@ -23,7 +23,7 @@
   align-items: center;
   gap: 16px;
   padding: 12px 16px;
-  background-color: #1E4C73;
+  background-color: var(--secondary-bg);
   border-radius: 8px;
 }
 

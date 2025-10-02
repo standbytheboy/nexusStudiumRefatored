@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background-color: #1E4C73;
+  background-color: var(--secondary-bg);
   padding: 16px;
   border-radius: 8px;
 }
