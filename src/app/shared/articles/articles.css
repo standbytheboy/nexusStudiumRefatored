@@ -1,0 +1,145 @@
+:host {
+  display: block;
+  padding: 24px 40px;
+  font-family: 'Inter', sans-serif;
+  color: #E8F4FC;
+}
+
+.articles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.articles-header {
+  margin-bottom: 40px;
+}
+
+.articles-header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+}
+
+.filters button {
+  background-color: var(--secondary-bg);
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.filters button:hover {
+  border-color: var(--accent-color);
+}
+
+.filters button.active {
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.filter-count {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.article-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
+  transition:
+    transform 0.6s ease,
+    background-size 1.5s ease;
+}
+
+.article-card:hover {
+  transform: scale(1.02);
+}
+
+.article-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.8s ease-in-out; 
+}
+
+.article-card:hover .article-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.article-content {
+  position: relative;
+  z-index: 1;
+}
+
+.article-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #3d6e91;
+  padding-top: 16px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ccc; /* Cor de fundo enquanto a imagem não carrega */
+}
+
+.author-name {
+  margin: 0;
+  font-weight: 500;
+}
+
+.author-role {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.read-time {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
