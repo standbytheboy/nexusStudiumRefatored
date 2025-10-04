@@ -12,5 +12,5 @@
 body {
   background-color: var(--primary-bg);
   color: var(--text-primary);
-  font-family: 'Fira Sans', sans-serif; /* Ou outra fonte de sua preferência */
+  font-family: 'Fira Sans', sans-serif; 
 }

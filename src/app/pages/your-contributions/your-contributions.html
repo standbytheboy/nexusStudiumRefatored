@@ -1,14 +1,14 @@
 <main class="contributions-content">
   <app-search-bar></app-search-bar>
 
-  <h2 class="section-title">Vídeos</h2>
+  <h2 class="section-title">Seus Vídeos</h2>
   <section class="videos-grid">
     <app-course-card *ngFor="let video of videoContributions" [course]="video"></app-course-card>
   </section>
 
   <h2 class="section-title">Dados Relevantes/Métricas</h2>
   <div class="main-grid">
-    <section class="metrics-grid">
+    <section class="metrics-flex">
       <app-metric-card *ngFor="let metric of metrics" [metric]="metric"></app-metric-card>
     </section>
     <app-comparison-chart></app-comparison-chart>

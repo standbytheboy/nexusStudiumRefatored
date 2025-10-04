@@ -25,10 +25,18 @@
   justify-content: space-between;
 }
 
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+.metrics-flex {
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+.metrics-flex > app-metric-card {
+  /* flex-grow: 1 -> Permite que o item cresça.
+    flex-shrink: 1 -> Permite que o item encolha (padrão).
+    flex-basis: 250px -> Define o tamanho base do item.
+  */
+  flex: 1 1 250px;
 }
 
 .main-grid {
