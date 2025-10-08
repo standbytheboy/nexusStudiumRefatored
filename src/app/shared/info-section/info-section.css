@@ -5,28 +5,13 @@
   color: #E8F4FC;
 }
 
-.thumb-courses-container {
-  max-width: 100rem;
-  cursor: pointer;
-}
-
-.thumb-courses-header {
-  margin-bottom: 40px;
-}
-
-.thumb-courses-header h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-.thumb-courses-grid {
+.infos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.thumb-course-card {
+.info-card {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -43,35 +28,35 @@
     background-size 1.5s ease;
 }
 
-.thumb-course-card:hover {
+.info-card:hover {
   transform: scale(1.02);
 }
 
-.thumb-course-overlay {
+.info-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   transition: background-color 0.8s ease-in-out; 
 }
 
-.thumb-course-card:hover .thumb-course-overlay {
+.info-card:hover .info-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
 
 
-.thumb-course-content {
+.info-content {
   position: relative;
   z-index: 1;
 }
 
-.thumb-course-title {
+.info-title {
   font-size: 1.25rem;
   font-weight: 500;
   margin: 0 0 16px 0;
   flex-grow: 1;
 }
 
-.thumb-course-footer {
+.info-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

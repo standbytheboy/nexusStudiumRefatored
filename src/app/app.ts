@@ -7,10 +7,11 @@ import { ThumbVideos } from "./shared/thumb-video/thumb-video";
 import { CourseCard } from "./shared/course-card/course-card";
 import { VideoPagination } from "./shared/video-pagination/video-pagination";
 import { PopularCourses } from "./shared/popular-courses/popular-courses";
+import { InfoSection } from "./shared/info-section/info-section";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, VideoPagination, PopularCourses],
+  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

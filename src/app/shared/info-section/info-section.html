@@ -1,0 +1,14 @@
+<div class="info-card" *ngIf="info">
+  <div class="info-content">
+    <h2 class="info-title">{{ info.title }}</h2>
+    <div class="info-footer">
+      <div class="author-info">
+        <img [src]="info.authorAvatar" alt="Avatar de {{ info.author }}" class="author-avatar">
+        <div>
+          <p class="author-name">{{ info.author }}</p>
+        </div>
+      </div>
+      <span class="read-time">{{ info.minutesToRead }} min</span>
+    </div>
+  </div>
+</div>

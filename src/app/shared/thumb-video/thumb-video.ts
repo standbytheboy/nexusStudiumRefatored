@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Interfaces para tipar os dados
 export interface ThumbVideo {
   image: string;
   title: string;
