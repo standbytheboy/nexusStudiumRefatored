@@ -11,12 +11,6 @@ export interface ThumbVideo {
   minutesToRead: number;
 }
 
-export interface Filter {
-  name: string;
-  count: number;
-  active: boolean;
-}
-
 @Component({
   selector: 'app-thumb-videos',
   standalone: true,
@@ -27,14 +21,6 @@ export interface Filter {
 export class ThumbVideos {
 
   @Input() video: ThumbVideo | null = null;
-  // Dados de exemplo para os filtros
-  filters: Filter[] = [
-    { name: 'Todos', count: 34, active: true },
-    { name: 'Liderança', count: 10, active: false },
-    { name: 'Produtividade', count: 16, active: false },
-    { name: 'Ferramentas', count: 8, active: false }
-  ];
-
   // Dados de exemplo para os artigos
   thumbVideos: ThumbVideo[] = [
     {

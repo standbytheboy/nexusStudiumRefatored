@@ -5,10 +5,11 @@ import { YourContributions } from "./pages/your-contributions/your-contributions
 import { Dashboard } from "./pages/dashboard/dashboard";
 import { ThumbVideos } from "./shared/thumb-video/thumb-video";
 import { CourseCard } from "./shared/course-card/course-card";
+import { VideoPagination } from "./shared/video-pagination/video-pagination";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, Dashboard],
+  imports: [SidebarComponent, VideoPagination],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
