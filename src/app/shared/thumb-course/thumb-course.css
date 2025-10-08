@@ -1,13 +1,12 @@
 :host {
   display: block;
-  padding: 24px 40px;
+  padding-top: 24px;
   font-family: 'Inter', sans-serif;
   color: #E8F4FC;
 }
 
 .thumb-courses-container {
   max-width: 1200px;
-  margin: 0 auto 0 300px;
 }
 
 .thumb-courses-header {

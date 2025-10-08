@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThumbCourse, ThumbCourseProps } from "../thumb-course/thumb-course";
+import { SearchBar } from "../../layout/search-bar/search-bar";
 
 @Component({
   selector: 'app-popular-courses',
-  imports: [CommonModule, ThumbCourse],
+  imports: [CommonModule, ThumbCourse, SearchBar],
   templateUrl: './popular-courses.html',
   styleUrl: './popular-courses.css',
 })
@@ -34,6 +35,71 @@ export class PopularCourses {
       authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
       minutesToRead: 10
     },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    
     {
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
       title: 'Como Manter o Foco em Home Office',

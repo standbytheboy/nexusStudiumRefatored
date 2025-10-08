@@ -6,7 +6,8 @@
 }
 
 .popular-courses-container {
-  max-width: 1500px;
+  max-width: 100rem;
+  margin-left: 300px;
 }
 
 .popular-courses-grid {
