@@ -4,12 +4,19 @@
 }
 
 .article-info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  background-color: var(--secondary-bg-tp);
+  border-radius: 1rem;
+  padding: 1.9rem 1.9rem 1rem;
+  overflow: hidden;
 }
 
-.article-info-grid {
-    background-color: var(--secondary-bg-tp);
-    border-radius: 1rem;
+.article-info-grid > app-info-section {
+  flex-basis: calc(33.333% - 20px);
+  flex-grow: 1;
+  min-width: 28rem;
+  border-top: 1px solid #E8F4FC80;
+  margin-top: -2rem; /* para esconder a pirmeira borda */
 }
