@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CourseCardComponent } from "../../shared/course-card/course-card";
+import { CourseCard } from "../../shared/course-card/course-card";
 import { FollowingList } from "../../shared/following-list/following-list";
 import { DailyGoals } from "../../shared/daily-goals/daily-goals";
 import { StudiedTopics } from "../../shared/studied-topics/studied-topics";
@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './dashboard.html',
   styleUrls: ['./dashboard.css'],
-  imports: [CommonModule, CourseCardComponent, FollowingList, DailyGoals, StudiedTopics, RecentExercisesComponent, SearchBar]
+  imports: [CommonModule, CourseCard, FollowingList, DailyGoals, StudiedTopics, RecentExercisesComponent, SearchBar]
 })
 export class Dashboard {
   inProgressCourses = [

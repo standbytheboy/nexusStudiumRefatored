@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchBar } from '../../layout/search-bar/search-bar';
-import { CourseCardComponent, Course } from '../../shared/course-card/course-card';
+import { CourseCard, Course } from '../../shared/course-card/course-card';
 import { Metric, MetricCard } from '../../shared/metric-card/metric-card';
 import { ComparisonChartComponent } from '../../shared/comparison-chart/comparison-chart';
 import { UserComment, UserCommentComponent } from '../../shared/user-comment/user-comment';
@@ -12,7 +12,7 @@ import { UserComment, UserCommentComponent } from '../../shared/user-comment/use
   imports: [
     CommonModule,
     SearchBar,
-    CourseCardComponent,
+    CourseCard,
     MetricCard,
     ComparisonChartComponent,
     UserCommentComponent

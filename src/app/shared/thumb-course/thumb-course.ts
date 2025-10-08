@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Interfaces para tipar os dados
-export interface Article {
+export interface ThumbCourseProps {
   image: string;
   title: string;
   author: string;
@@ -12,16 +11,15 @@ export interface Article {
 }
 
 @Component({
-  selector: 'app-articles',
+  selector: 'app-thumb-course',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './articles.html',
-  styleUrls: ['./articles.css']
+  templateUrl: './thumb-course.html',
+  styleUrls: ['./thumb-course.css']
 })
-export class Articles {
-
+export class ThumbCourse {
   // Dados de exemplo para os artigos
-  articles: Article[] = [
+  thumbCourse: ThumbCourseProps[] = [
     {
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
       title: 'Dicas de Como se Tornar um Bom Lider',

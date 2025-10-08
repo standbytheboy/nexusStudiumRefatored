@@ -14,6 +14,6 @@ export interface Course {
   templateUrl: './course-card.html',
   styleUrls: ['./course-card.css']
 })
-export class CourseCardComponent {
+export class CourseCard {
   @Input() course: Course | null = null;
 }

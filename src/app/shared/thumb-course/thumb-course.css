@@ -5,28 +5,28 @@
   color: #E8F4FC;
 }
 
-.articles-container {
+.thumb-courses-container {
   max-width: 1200px;
   margin: 0 auto 0 300px;
 }
 
-.articles-header {
+.thumb-courses-header {
   margin-bottom: 40px;
 }
 
-.articles-header h1 {
+.thumb-courses-header h1 {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 24px;
 }
 
-.articles-grid {
+.thumb-courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.article-card {
+.thumb-course-card {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -43,35 +43,35 @@
     background-size 1.5s ease;
 }
 
-.article-card:hover {
+.thumb-course-card:hover {
   transform: scale(1.02);
 }
 
-.article-overlay {
+.thumb-course-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   transition: background-color 0.8s ease-in-out; 
 }
 
-.article-card:hover .article-overlay {
+.thumb-course-card:hover .thumb-course-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
 
 
-.article-content {
+.thumb-course-content {
   position: relative;
   z-index: 1;
 }
 
-.article-title {
+.thumb-course-title {
   font-size: 1.25rem;
   font-weight: 500;
   margin: 0 0 16px 0;
   flex-grow: 1;
 }
 
-.article-footer {
+.thumb-course-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

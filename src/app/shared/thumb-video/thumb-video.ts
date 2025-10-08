@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Interfaces para tipar os dados
@@ -25,6 +25,8 @@ export interface Filter {
   styleUrls: ['./thumb-video.css']
 })
 export class ThumbVideos {
+
+  @Input() video: ThumbVideo | null = null;
   // Dados de exemplo para os filtros
   filters: Filter[] = [
     { name: 'Todos', count: 34, active: true },
