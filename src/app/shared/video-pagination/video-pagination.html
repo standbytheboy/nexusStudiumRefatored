@@ -1,10 +1,12 @@
-<div class="thumb-videos-grid">
-  <app-thumb-videos *ngFor="let video of paginatedVideos" [video]="video"></app-thumb-videos>
-</div>
+<section class="thumb-videos-container">
+  <div class="thumb-videos-grid">
+    <app-thumb-videos *ngFor="let video of paginatedVideos" [video]="video"></app-thumb-videos>
+  </div>
 
-<app-pagination
-  *ngIf="totalDePaginas > 1"
-  [totalDePaginas]="totalDePaginas"
-  [paginaAtual]="paginaAtual"
-  (paginaAlterada)="onPageChange($event)">
-</app-pagination>
+  <app-pagination
+    *ngIf="totalDePaginas > 1"
+    [totalDePaginas]="totalDePaginas"
+    [paginaAtual]="paginaAtual"
+    (paginaAlterada)="onPageChange($event)">
+  </app-pagination>
+</section>

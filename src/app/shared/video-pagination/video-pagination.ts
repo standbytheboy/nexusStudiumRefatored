@@ -1,7 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core'; // Importe OnInit
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Importe os componentes e a interface necessários
 import { ThumbVideo, ThumbVideos } from '../thumb-video/thumb-video';
 import { Pagination } from '../../layout/pagination/pagination';
 
@@ -12,10 +11,25 @@ import { Pagination } from '../../layout/pagination/pagination';
   templateUrl: './video-pagination.html',
   styleUrls: ['./video-pagination.css']
 })
-export class VideoPagination implements OnInit { // Implemente OnInit
+export class VideoPagination implements OnInit {
   
-  // A lista de vídeos agora pertence a este componente
   public allVideos: ThumbVideo[] = [
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Como Manter o Foco em Home Office',
+      author: 'Marcos Borges',
+      authorRole: 'Scrum Master',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 8
+    },
     {
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
       title: 'Dicas de Como se Tornar um Bom Lider',
@@ -39,10 +53,58 @@ export class VideoPagination implements OnInit { // Implemente OnInit
       authorRole: 'Scrum Master',
       authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
       minutesToRead: 8
-    }
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Dicas de Como se Tornar um Bom Lider',
+      author: 'Leandro Silva',
+      authorRole: 'Designer UX',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728', 
+      minutesToRead: 15
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Como Manter o Foco em Home Office',
+      author: 'Marcos Borges',
+      authorRole: 'Scrum Master',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 8
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Dicas de Como se Tornar um Bom Lider',
+      author: 'Leandro Silva',
+      authorRole: 'Designer UX',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728', 
+      minutesToRead: 15
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Figma: Dicas Essenciais para Iniciantes',
+      author: 'Ana Clara',
+      authorRole: 'Product Designer',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 10
+    },
+    {
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+      title: 'Como Manter o Foco em Home Office',
+      author: 'Marcos Borges',
+      authorRole: 'Scrum Master',
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
+      minutesToRead: 8
+    },
   ];
 
-  @Input() videosPorPagina: number = 8;
+  @Input() videosPorPagina: number = 6;
 
   public paginatedVideos: ThumbVideo[] = [];
   public paginaAtual: number = 1;

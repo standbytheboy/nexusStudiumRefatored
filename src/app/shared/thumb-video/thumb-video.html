@@ -1,21 +1,17 @@
-<main class="thumb-videos-container">
-  <section class="thumb-videos-grid">
-  <div class="thumb-video-card" *ngFor="let video of thumbVideos">
-    <div class="thumb-video-image-placeholder">
-      <img [src]="video.authorAvatar" alt="Avatar de {{ video.author }}">
-    </div>
-    <div class="thumb-video-content">
-      <h2 class="thumb-video-title">{{ video.title }}</h2>
-      <div class="thumb-video-footer">
-        <div class="author-info">
-          <img [src]="video.authorAvatar" alt="Avatar de {{ video.author }}" class="author-avatar">
-          <div>
-            <p class="author-name">{{ video.author }}</p>
-          </div>
+<div class="thumb-video-card" *ngIf="video">
+  <div class="thumb-video-image-placeholder">
+    <img [src]="video.image" alt="Thumbnail do vídeo {{ video.title }}">
+  </div>
+  <div class="thumb-video-content">
+    <h2 class="thumb-video-title">{{ video.title }}</h2>
+    <div class="thumb-video-footer">
+      <div class="author-info">
+        <img [src]="video.authorAvatar" alt="Avatar de {{ video.author }}" class="author-avatar">
+        <div>
+          <p class="author-name">{{ video.author }}</p>
         </div>
-        <span class="read-time">{{ video.minutesToRead }} min</span>
       </div>
+      <span class="read-time">{{ video.minutesToRead }} min</span>
     </div>
   </div>
-</section>
-</main>
+</div>
