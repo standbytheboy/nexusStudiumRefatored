@@ -1,12 +1,9 @@
 <main class="thumb-courses-container">
-  <header class="thumb-courses-header">
-    <h1>Artigos</h1>
-  </header>
 
   <section class="thumb-courses-grid">
     <div
       class="thumb-course-card"
-      *ngFor="let course of thumbCourse"
+      *ngIf="course"
       [ngStyle]="{ 'background-image': 'url(' + course.image + ')' }"
     >
       <div class="thumb-course-overlay"></div>

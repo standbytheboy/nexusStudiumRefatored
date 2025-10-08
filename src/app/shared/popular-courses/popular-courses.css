@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  padding: 24px 40px;
+  font-family: 'Inter', sans-serif;
+  color: #E8F4FC;
+}
+
+.popular-courses-container {
+  max-width: 1500px;
+}
+
+.popular-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 2rem; 
+}

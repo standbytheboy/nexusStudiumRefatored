@@ -6,10 +6,11 @@ import { Dashboard } from "./pages/dashboard/dashboard";
 import { ThumbVideos } from "./shared/thumb-video/thumb-video";
 import { CourseCard } from "./shared/course-card/course-card";
 import { VideoPagination } from "./shared/video-pagination/video-pagination";
+import { PopularCourses } from "./shared/popular-courses/popular-courses";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, VideoPagination],
+  imports: [SidebarComponent, VideoPagination, PopularCourses],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
