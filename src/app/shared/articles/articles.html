@@ -1,11 +1,6 @@
 <main class="articles-container">
   <header class="articles-header">
     <h1>Artigos</h1>
-    <div class="filters">
-      <button *ngFor="let filter of filters" [class.active]="filter.active">
-        {{ filter.name }} <span class="filter-count">{{ filter.count }}</span>
-      </button>
-    </div>
   </header>
 
   <section class="articles-grid">

@@ -11,12 +11,6 @@ export interface Article {
   minutesToRead: number;
 }
 
-export interface Filter {
-  name: string;
-  count: number;
-  active: boolean;
-}
-
 @Component({
   selector: 'app-articles',
   standalone: true,
@@ -25,13 +19,6 @@ export interface Filter {
   styleUrls: ['./articles.css']
 })
 export class Articles {
-  // Dados de exemplo para os filtros
-  filters: Filter[] = [
-    { name: 'Todos', count: 34, active: true },
-    { name: 'Liderança', count: 10, active: false },
-    { name: 'Produtividade', count: 16, active: false },
-    { name: 'Ferramentas', count: 8, active: false }
-  ];
 
   // Dados de exemplo para os artigos
   articles: Article[] = [

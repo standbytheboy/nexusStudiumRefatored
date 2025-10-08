@@ -7,7 +7,7 @@
 
 .thumb-videos-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 0 300px;
 }
 .thumb-videos-grid {
   display: grid;

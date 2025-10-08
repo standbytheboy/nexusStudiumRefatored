@@ -1,0 +1,18 @@
+<div class="pagination">
+  <button
+    *ngFor="let numeroDaPagina of paginas"
+    [class.active]="paginaAtual === numeroDaPagina"
+    (click)="mudarPagina(numeroDaPagina)"
+    class="page-button"
+  >
+    {{ numeroDaPagina }}
+  </button>
+
+  <button
+    class="page-button next"
+    (click)="proximaPagina()"
+    [disabled]="paginaAtual === totalDePaginas"
+  >
+    Próximo &gt;
+  </button>
+</div>
