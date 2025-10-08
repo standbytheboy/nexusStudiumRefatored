@@ -1,0 +1,15 @@
+.article-info-container {
+  max-width: 100rem;
+  margin-left: 300px;
+}
+
+.article-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 30px;
+}
+
+.article-info-grid {
+    background-color: var(--secondary-bg-tp);
+    border-radius: 1rem;
+}

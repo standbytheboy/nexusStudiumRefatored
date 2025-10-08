@@ -8,10 +8,11 @@ import { CourseCard } from "./shared/course-card/course-card";
 import { VideoPagination } from "./shared/video-pagination/video-pagination";
 import { PopularCourses } from "./shared/popular-courses/popular-courses";
 import { InfoSection } from "./shared/info-section/info-section";
+import { ArticleTitle } from "./shared/article-title/article-title";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection],
+  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection, ArticleTitle],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

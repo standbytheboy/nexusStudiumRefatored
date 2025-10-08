@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 export interface InfoProps {
-  image: string;
   title: string;
+  subtitle: string;
   author: string;
   authorRole: string;
   authorAvatar: string;
@@ -16,6 +16,7 @@ export interface InfoProps {
   templateUrl: './info-section.html',
   styleUrl: './info-section.css'
 })
+
 export class InfoSection {
   @Input() info: InfoProps | null = null;
 }

@@ -1,20 +1,15 @@
 :host {
   display: block;
-  padding-top: 24px;
   font-family: 'Inter', sans-serif;
   color: #E8F4FC;
 }
 
-.infos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
 .info-card {
+  cursor: pointer;
   position: relative;
   background-size: cover;
   background-position: center;
+  min-width: 28rem;
   border-radius: 16px;
   overflow: hidden;
   color: #fff;
@@ -22,7 +17,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 300px;
   transition:
     transform 0.6s ease,
     background-size 1.5s ease;
@@ -36,7 +30,7 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.8s ease-in-out; 
+  transition: background-color 0.8s ease-in-out;
 }
 
 .info-card:hover .info-overlay {
@@ -56,11 +50,15 @@
   flex-grow: 1;
 }
 
+.info-subtitle {
+  flex-grow: 1;
+  color: #E8F4FC80;
+}
+
 .info-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #3d6e91;
   padding-top: 16px;
 }
 
