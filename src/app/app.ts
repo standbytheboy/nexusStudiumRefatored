@@ -18,7 +18,7 @@ import { Trail } from "./shared/trail/trail";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, MainCommunity, Trail],
+  imports: [SidebarComponent, Trail],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

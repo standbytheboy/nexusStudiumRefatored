@@ -11,6 +11,10 @@
   padding: 24px;
 }
 
+h2 {
+    margin: .5rem 0 1.25rem;
+}
+
 .module-header {
   display: flex;
   justify-content: space-between;
@@ -26,7 +30,6 @@
 }
 
 .module-title {
-  font-size: 1rem;
   color: var(--text-primary);
   margin: 0;
   padding: 0;
@@ -50,7 +53,7 @@
 .video-item {
   display: flex;
   align-items: center;
-  padding: 12px 0;
+  padding: .5rem 0;
   color: var(--text-secondary);
 }
 
