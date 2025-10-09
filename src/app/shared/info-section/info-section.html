@@ -10,6 +10,7 @@
         </div>
       </div>
       <span *ngIf="info.minutesToRead" class="read-time">{{ info.minutesToRead }} min</span>
+      <span *ngIf="info.answerCount" class="answer-count">Respostas: {{ info.answerCount }}</span>
       <span *ngIf="info.hitPercentage" class="flex">
         Acertos:
         <span class="hit-percentage flex">{{ info.hitPercentage }}%</span>

@@ -9,6 +9,7 @@ export interface InfoProps {
   authorAvatar: string;
   minutesToRead?: number;
   hitPercentage?: number;
+  answerCount?: number;
 }
 
 @Component({

@@ -10,10 +10,11 @@ import { PopularCourses } from "./shared/popular-courses/popular-courses";
 import { InfoSection } from "./shared/info-section/info-section";
 import { ArticleCard } from "./shared/article-card/article-card";
 import { ExerciseCard } from "./shared/exercise-card/exercise-card";
+import { CommunityCard } from "./shared/community-card/community-card";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection, ArticleCard, ExerciseCard],
+  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection, ArticleCard, ExerciseCard, CommunityCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

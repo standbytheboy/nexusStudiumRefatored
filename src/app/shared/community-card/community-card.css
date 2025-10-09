@@ -1,9 +1,9 @@
-.exercise-info-container {
+.community-info-container {
   max-width: 100rem;
   margin-left: 300px;
 }
 
-.exercise-info-grid {
+.community-info-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.exercise-info-grid > app-info-section {
+.community-info-grid > app-info-section {
   flex-basis: calc(33.333% - 20px);
   flex-grow: 1;
   min-width: 28rem;
