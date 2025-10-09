@@ -91,3 +91,18 @@
   font-size: 0.8rem;
   color: var(--text-secondary);
 }
+
+.hit-percentage {
+  width: 35px;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

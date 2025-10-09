@@ -9,7 +9,11 @@
           <p class="author-name">{{ info.author }}</p>
         </div>
       </div>
-      <span class="read-time">{{ info.minutesToRead }} min</span>
+      <span *ngIf="info.minutesToRead" class="read-time">{{ info.minutesToRead }} min</span>
+      <span *ngIf="info.hitPercentage" class="flex">
+        Acertos:
+        <span class="hit-percentage flex">{{ info.hitPercentage }}%</span>
+      </span>
     </div>
   </div>
 </div>
