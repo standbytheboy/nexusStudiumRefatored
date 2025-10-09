@@ -1,0 +1,23 @@
+<div class="main-info-card" *ngIf="info">
+  <div class="main-image-container">
+    <img class="main-image" [src]="info.image" alt="Foto sobre {{ info.title }}">
+  </div>
+  <div class="main-info-content">
+    <h2 class="main-info-title">{{ info.title }}</h2>
+    <p class="main-info-subtitle">{{ info.subtitle }}</p>
+    <div class="main-info-footer">
+      <div class="author-main-info">
+        <img [src]="info.authorAvatar" alt="Avatar de {{ info.author }}" class="author-avatar">
+        <div>
+          <p class="author-name">{{ info.author }}</p>
+        </div>
+      </div>
+      <span *ngIf="info.minutesToRead" class="read-time">{{ info.minutesToRead }} min</span>
+      <span *ngIf="info.answerCount" class="answer-count">Respostas: {{ info.answerCount }}</span>
+      <span *ngIf="info.hitPercentage" class="flex">
+        Acertos:
+        <span class="hit-percentage flex">{{ info.hitPercentage }}%</span>
+      </span>
+    </div>
+  </div>
+</div>
