@@ -9,7 +9,6 @@
   gap: 30px;
   background-color: var(--secondary-bg-tp);
   border-radius: 1rem;
-  padding: 2rem;
 }
 
 .article-info-grid > app-info-section {

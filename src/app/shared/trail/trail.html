@@ -1,0 +1,22 @@
+<div class="trail-container">
+  <div class="module-group" *ngFor="let module of modules">
+    
+    <button class="module-header" (click)="toggleModule(module)">
+      <h3 class="module-title">{{ module.title }}</h3>
+      <span class="material-symbols-outlined expand-icon" [class.collapsed]="module.isCollapsed">
+        expand_more
+      </span>
+    </button>
+    
+    <div class="videos-list" *ngIf="!module.isCollapsed">
+      <div class="video-item" *ngFor="let video of module.videos" [class.completed]="video.completed">
+        <div class="video-check-container">
+          <span class="material-symbols-outlined check-icon">check_circle</span>
+        </div>
+        <p class="video-title">{{ video.title }}</p>
+        <span class="video-duration">{{ video.duration }}</span>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -14,10 +14,11 @@ import { CommunityCard } from "./shared/community-card/community-card";
 import { MainArticle } from "./shared/main-article/main-article";
 import { MainExercise } from "./shared/main-exercise/main-exercise";
 import { MainCommunity } from "./shared/main-community/main-community";
+import { Trail } from "./shared/trail/trail";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection, ArticleCard, ExerciseCard, CommunityCard, MainArticle, MainExercise, MainCommunity],
+  imports: [SidebarComponent, MainCommunity, Trail],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
