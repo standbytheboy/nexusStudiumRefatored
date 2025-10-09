@@ -15,10 +15,11 @@ import { MainArticle } from "./shared/main-article/main-article";
 import { MainExercise } from "./shared/main-exercise/main-exercise";
 import { MainCommunity } from "./shared/main-community/main-community";
 import { Trail } from "./shared/trail/trail";
+import { CourseHeader } from "./shared/course-header/course-header";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, Trail],
+  imports: [SidebarComponent, CourseHeader],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
