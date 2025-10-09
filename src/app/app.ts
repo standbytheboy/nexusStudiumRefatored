@@ -12,10 +12,12 @@ import { ArticleCard } from "./shared/article-card/article-card";
 import { ExerciseCard } from "./shared/exercise-card/exercise-card";
 import { CommunityCard } from "./shared/community-card/community-card";
 import { MainArticle } from "./shared/main-article/main-article";
+import { MainExercise } from "./shared/main-exercise/main-exercise";
+import { MainCommunity } from "./shared/main-community/main-community";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection, ArticleCard, ExerciseCard, CommunityCard, MainArticle],
+  imports: [SidebarComponent, VideoPagination, PopularCourses, InfoSection, ArticleCard, ExerciseCard, CommunityCard, MainArticle, MainExercise, MainCommunity],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
