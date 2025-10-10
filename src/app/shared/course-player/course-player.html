@@ -1,0 +1,51 @@
+<main class="course-detail-container">
+  <section class="video-section">
+    <div class="video-player-wrapper">
+      <img [src]="course.videoThumbnail" alt="Thumbnail do curso {{ course.title }}" class="video-thumbnail">
+      <div class="play-button-overlay">
+        <span class="material-symbols-outlined play-icon">play_circle</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="course-body">
+    <section class="info-section">
+      <h1 class="course-title">{{ course.title }}</h1>
+      <div class="metadata">
+        <div class="author">
+          <img [src]="course.authorAvatar" alt="Foto de {{ course.author }}" class="author-avatar">
+          <span>{{ course.author }}</span>
+        </div>
+        <div class="rating">
+          <span class="material-symbols-outlined star-icon">star</span>
+          <span>{{ course.rating }}</span>
+        </div>
+        <span class="level-tag">{{ course.level }}</span>
+        <span class="student-count">{{ course.studentCount }} estudantes</span>
+      </div>
+    </section>
+
+    <nav class="course-tabs">
+      <button (click)="selectTab('overview')" [class.active]="activeTab === 'overview'">Visão Geral</button>
+      <button (click)="selectTab('resources')" [class.active]="activeTab === 'resources'">Recursos</button>
+      <button (click)="selectTab('reviews')" [class.active]="activeTab === 'reviews'">Avaliações</button>
+    </nav>
+
+    <section class="course-content">
+      <div *ngIf="activeTab === 'overview'">
+        <h2>Sobre o Curso</h2>
+        <p>{{ course.description }}</p>
+        <h2>O que você vai aprender</h2>
+        <p>{{ course.learningPoints }}</p>
+      </div>
+      <div *ngIf="activeTab === 'resources'">
+        <h2>Recursos</h2>
+        <p>Recursos do curso, como links e arquivos para download, aparecerão aqui.</p>
+      </div>
+      <div *ngIf="activeTab === 'reviews'">
+        <h2>Avaliações</h2>
+        <p>As avaliações de outros alunos sobre o curso aparecerão aqui.</p>
+      </div>
+    </section>
+  </div>
+</main>

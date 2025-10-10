@@ -16,10 +16,11 @@ import { MainExercise } from "./shared/main-exercise/main-exercise";
 import { MainCommunity } from "./shared/main-community/main-community";
 import { Trail } from "./shared/trail/trail";
 import { CourseHeader } from "./shared/course-header/course-header";
+import { CoursePlayer } from "./shared/course-player/course-player";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, CourseHeader],
+  imports: [SidebarComponent, CoursePlayer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
