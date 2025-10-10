@@ -20,6 +20,7 @@ export class Dashboard {
     { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
     { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
     { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
+    { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
     { title: 'Design Digital', type: 'Trilha', progress: '1/3' }
   ];
 

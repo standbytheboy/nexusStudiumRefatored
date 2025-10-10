@@ -9,7 +9,7 @@
   background-color: #202850;
   padding: 30px;
   border-radius: 20px;
-  width: 12rem;
+  min-width: 12rem;
   height: 12rem;
   display: flex;
   flex-direction: column;

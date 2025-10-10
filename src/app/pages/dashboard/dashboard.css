@@ -33,8 +33,9 @@
 }
 
 .courses-in-progress {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
   gap: 20px;
 }
 
@@ -60,11 +61,6 @@
 @media (max-width: 992px) {
   .dashboard-grid {
     grid-template-columns: 1fr;
-  }
-
-  .courses-in-progress {
-    /* Garante que os cards não fiquem muito pequenos */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
