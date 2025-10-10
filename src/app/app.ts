@@ -21,7 +21,7 @@ import { Course } from "./pages/course/course";
 
 @Component({
   selector: 'app-root',
-  imports: [SidebarComponent, Course],
+  imports: [Dashboard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

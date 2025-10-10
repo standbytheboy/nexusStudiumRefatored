@@ -5,6 +5,7 @@ import { CourseCard, Course } from '../../shared/course-card/course-card';
 import { Metric, MetricCard } from '../../shared/metric-card/metric-card';
 import { ComparisonChartComponent } from '../../shared/comparison-chart/comparison-chart';
 import { UserComment, UserCommentComponent } from '../../shared/user-comment/user-comment';
+import { SidebarComponent } from "../../layout/sidebar/sidebar";
 
 @Component({
   selector: 'app-your-contributions',
@@ -15,8 +16,9 @@ import { UserComment, UserCommentComponent } from '../../shared/user-comment/use
     CourseCard,
     MetricCard,
     ComparisonChartComponent,
-    UserCommentComponent
-  ],
+    UserCommentComponent,
+    SidebarComponent
+],
   templateUrl: './your-contributions.html',
   styleUrls: ['./your-contributions.css']
 })
