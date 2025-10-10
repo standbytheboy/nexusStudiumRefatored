@@ -1,0 +1,12 @@
+.flex {
+    display: flex;
+    margin: 0 1.5rem 0 20rem;
+    gap: 2rem;
+}
+
+@media(max-width: 1200px) {
+    .flex {
+        margin: 0;
+        padding: 0 1rem;
+    }
+}

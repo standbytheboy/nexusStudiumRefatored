@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+import { Trail } from "../../shared/trail/trail";
+import { CourseHeader } from "../../shared/course-header/course-header";
+import { CoursePlayer } from "../../shared/course-player/course-player";
+import { SidebarComponent } from "../../layout/sidebar/sidebar";
 
 @Component({
   selector: 'app-course',
-  imports: [],
+  imports: [Trail, CourseHeader, CoursePlayer, SidebarComponent],
   templateUrl: './course.html',
   styleUrl: './course.css'
 })

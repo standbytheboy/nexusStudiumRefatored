@@ -62,3 +62,9 @@
   font-size: 16px;
   color: #FFD700;
 }
+
+@media (max-width: 1200px) {
+  :host {
+    margin: 0;
+  }
+}

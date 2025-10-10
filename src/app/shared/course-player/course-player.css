@@ -1,6 +1,5 @@
 :host {
   display: block;
-  margin-left: 300px; /* Para acomodar a sidebar */
   font-family: 'Fira Sans', sans-serif;
   color: var(--text-primary, #E8F4FC);
 }
