@@ -21,7 +21,7 @@ import { Course } from "./pages/course/course";
 
 @Component({
   selector: 'app-root',
-  imports: [Dashboard],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

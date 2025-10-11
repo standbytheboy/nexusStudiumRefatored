@@ -1,45 +1,64 @@
 <aside class="sidebar flex">
   <div class="profile">
-      <div class="flex">
-          <img src="/logomarca.png" alt="Logo Nexus Studium" width="50px">
-          <p class="nexus">Nexus Studium</p>
-      </div>
-      <div class="user flex">
-          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36"
-              alt="Foto de Perfil" class="profile-photo" width="85px" height="85px">
-          <h2>Olá, {{ userName }}!</h2>
-          <p>{{ userEmail }}</p>
-      </div>
+    <div class="flex">
+      <img src="/logomarca.png" alt="Logo Nexus Studium" width="50px" />
+      <p class="nexus">Nexus Studium</p>
+    </div>
+    <div class="user flex">
+      <img
+        src="https://images.unsplash.com/photo-1599566150163-29194dcaad36"
+        alt="Foto de Perfil"
+        class="profile-photo"
+        width="85px"
+        height="85px"
+      />
+      <h2>Olá, {{ userName }}!</h2>
+      <p>{{ userEmail }}</p>
+    </div>
   </div>
   <div #circle class="circle flex">
-      <span #valor class="valor">
-          <p #total>Horas Totais:</p>
-          <h2 #hours class="hours">{{ totalHours }}</h2>
-      </span>
+    <span #valor class="valor">
+      <p #total>Horas Totais:</p>
+      <h2 #hours class="hours">{{ totalHours }}</h2>
+    </span>
   </div>
 
   <nav>
     <ul class="menu flex">
-      <li [class.active]="activeLink === 'Dashboard'">
-        <a href="#"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/dashboard">
+          <span class="material-symbols-outlined">dashboard</span> Dashboard
+        </a>
       </li>
-      <li [class.active]="activeLink === 'Cursos'">
-        <a href="#"><span class="material-symbols-outlined">school</span> Cursos</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/course">
+          <span class="material-symbols-outlined">school</span> Cursos
+        </a>
       </li>
-      <li [class.active]="activeLink === 'Artigos'">
-        <a href="#"><span class="material-symbols-outlined">article</span> Artigos</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/course">
+          <span class="material-symbols-outlined">article</span> Artigos
+        </a>
       </li>
-      <li [class.active]="activeLink === 'Exercícios'">
-        <a href="#"><span class="material-symbols-outlined">exercise</span> Exercícios</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/course">
+          <span class="material-symbols-outlined">exercise</span> Exercícios
+        </a>
       </li>
-      <li [class.active]="activeLink === 'Comunidade'">
-        <a href="#"><span class="material-symbols-outlined">groups</span> Comunidade</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/course">
+          <span class="material-symbols-outlined">groups</span> Comunidade
+        </a>
       </li>
-      <li [class.active]="activeLink === 'Contribuições'">
-        <a href="#"><span class="material-symbols-outlined">volunteer_activism</span> Suas Contribuições</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/course">
+          <span class="material-symbols-outlined">volunteer_activism</span> Suas Contribuições
+        </a>
       </li>
-      <li [class.active]="activeLink === 'Contribuições'">
-        <a href="#"><span class="material-symbols-outlined">settings</span>Configurações</a>
+      <li routerLinkActive="ativado">
+        <a routerLink="/course">
+          <span class="material-symbols-outlined">settings</span> Configurações
+        </a>
       </li>
     </ul>
   </nav>
