@@ -11,7 +11,7 @@ export class CoursePlayer {
   course = {
     title: 'Tour Pela Interface',
     author: 'Lucas Morais',
-    authorAvatar: 'https://i.pravatar.cc/150', // Imagem de placeholder
+    authorAvatar: 'https://i.pravatar.cc/150',
     rating: 4.9,
     level: 'Básico',
     studentCount: '1,700',
