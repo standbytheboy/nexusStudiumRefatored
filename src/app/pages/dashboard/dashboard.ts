@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CourseCard } from "../../shared/course-card/course-card";
 import { FollowingList } from "../../shared/following-list/following-list";
 import { DailyGoals } from "../../shared/daily-goals/daily-goals";
@@ -7,6 +7,8 @@ import { RecentExercisesComponent } from "../../shared/recent-exercises/recent-e
 import { SearchBar } from "../../layout/search-bar/search-bar";
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from "../../layout/sidebar/sidebar";
+import { CourseService } from '../../services/course';
+import { Course } from '../course/course';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,14 +17,18 @@ import { SidebarComponent } from "../../layout/sidebar/sidebar";
   styleUrls: ['./dashboard.css'],
   imports: [CommonModule, CourseCard, FollowingList, DailyGoals, StudiedTopics, RecentExercisesComponent, SearchBar, SidebarComponent]
 })
-export class Dashboard {
-  inProgressCourses = [
-    { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
-    { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
-    { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
-    { title: 'Design Digital', type: 'Trilha', progress: '1/3' },
-    { title: 'Design Digital', type: 'Trilha', progress: '1/3' }
-  ];
+export class Dashboard implements OnInit {
+  inProgressCourses: Course[] = [];
+
+  // injetando o serviço no construtor
+  constructor(private courseService: CourseService) {}
+
+  ngOnInit(): void {
+    // Pede os dados ao serviço quando o componente inicia
+    this.courseService.getInProgressCourses().subscribe(courses => {
+      this.inProgressCourses = courses;
+    });
+  }
 
   followedUsers = [
     { name: 'Leandro Silva', role: 'Designer UX', avatarUrl: 'https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
