@@ -11,6 +11,6 @@ import { SearchBar } from "../../layout/search-bar/search-bar";
   templateUrl: './course.html',
   styleUrl: './course.css'
 })
-export class Course {
+export class CoursePage {
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CourseCard } from "../../shared/course-card/course-card";
+import { CourseCard, Course } from "../../shared/course-card/course-card";
 import { FollowingList } from "../../shared/following-list/following-list";
 import { DailyGoals } from "../../shared/daily-goals/daily-goals";
 import { StudiedTopics } from "../../shared/studied-topics/studied-topics";
@@ -8,7 +8,6 @@ import { SearchBar } from "../../layout/search-bar/search-bar";
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from "../../layout/sidebar/sidebar";
 import { CourseService } from '../../services/course';
-import { Course } from '../course/course';
 
 @Component({
   selector: 'app-dashboard',
