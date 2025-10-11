@@ -6,6 +6,7 @@ export interface ContentItem {
   subtitle: string;
   author: string;
   authorAvatar: string;
+  authorRole?: string;
   image?: string;
   minutesToRead?: number;
   hitPercentage?: number;

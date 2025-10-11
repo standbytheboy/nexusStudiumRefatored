@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { MainInfoProps, MainSection } from "../main-section/main-section";
 import { CommonModule } from '@angular/common';
+import { Card } from "../card/card";
+import { ContentItem } from '../../models/content-item/content-item-module';
 
 @Component({
   selector: 'app-main-article',
-  imports: [MainSection, CommonModule],
+  imports: [CommonModule, Card],
   templateUrl: './main-article.html',
   styleUrl: './main-article.css'
 })
 export class MainArticle {
-  public articleInfo: MainInfoProps[] = [
+  public articleInfo: ContentItem[] = [
       {
         image: "https://images.unsplash.com/photo-1750785354752-2c234b875cdd",
         title: 'Figma: Dicas Essenciais para Iniciantes',

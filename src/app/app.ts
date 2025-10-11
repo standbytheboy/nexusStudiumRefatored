@@ -7,7 +7,6 @@ import { ThumbVideos } from "./shared/thumb-video/thumb-video";
 import { CourseCard } from "./shared/course-card/course-card";
 import { VideoPagination } from "./shared/video-pagination/video-pagination";
 import { PopularCourses } from "./shared/popular-courses/popular-courses";
-import { InfoSection } from "./shared/info-section/info-section";
 import { ArticleCard } from "./shared/article-card/article-card";
 import { ExerciseCard } from "./shared/exercise-card/exercise-card";
 import { CommunityCard } from "./shared/community-card/community-card";

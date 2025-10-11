@@ -4,6 +4,8 @@ import { CourseHeader } from "../../shared/course-header/course-header";
 import { CoursePlayer } from "../../shared/course-player/course-player";
 import { SidebarComponent } from "../../layout/sidebar/sidebar";
 import { SearchBar } from "../../layout/search-bar/search-bar";
+import { CommunityCard } from "../../shared/community-card/community-card";
+import { ArticleCard } from "../../shared/article-card/article-card";
 
 @Component({
   selector: 'app-course',
