@@ -1,0 +1,7 @@
+<app-search-bar></app-search-bar>
+<app-navigation></app-navigation>
+<h2>Mais recentes</h2>
+<div class="container">
+  <app-main-section *ngFor="let info of mainQuestion" [info]="info"></app-main-section>
+  <app-community-card></app-community-card>
+</div>

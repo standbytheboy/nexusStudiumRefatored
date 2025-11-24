@@ -3,16 +3,16 @@ import { SearchBar } from '../../layout/search-bar/search-bar';
 import { Navigation } from '../../layout/navigation/navigation';
 import { MainSection, MainInfoProps } from '../../shared/main-section/main-section';
 import { CommonModule } from '@angular/common';
-import { ExerciseCard } from '../../shared/exercise-card/exercise-card';
+import { CommunityCard } from '../../shared/community-card/community-card';
 
 @Component({
-  selector: 'app-exercises',
-  imports: [SearchBar, Navigation, MainSection, CommonModule, ExerciseCard],
-  templateUrl: './exercises.html',
-  styleUrl: './exercises.css',
+  selector: 'app-community',
+  imports: [SearchBar, Navigation, MainSection, CommonModule, CommunityCard],
+  templateUrl: './community.html',
+  styleUrl: './community.css',
 })
-export class Exercises {
-  public mainExercise: MainInfoProps[] = [
+export class Community {
+  public mainQuestion: MainInfoProps[] = [
     {
       image: 'https://images.unsplash.com/photo-1750785354752-2c234b875cdd',
       title:
@@ -21,7 +21,7 @@ export class Exercises {
       author: 'Ana Clara',
       authorRole: 'Product Designer',
       authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
-      hitPercentage: 10,
+      answerCount: 10,
     },
   ];
 }
