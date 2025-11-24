@@ -1,4 +1,7 @@
 <app-search-bar></app-search-bar>
 <app-navigation></app-navigation>
 <h2>Mais lidos do dia</h2>
-<app-main-section *ngFor="let info of articleInfo" [info]="info"></app-main-section>
+<div class="container">
+  <app-main-section *ngFor="let info of mainArticle" [info]="info"></app-main-section>
+  <app-article-card></app-article-card>
+</div>
