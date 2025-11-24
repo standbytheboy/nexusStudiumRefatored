@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainExercise } from './main-exercise';
+import { Navigation } from './navigation';
 
-describe('MainExercise', () => {
-  let component: MainExercise;
-  let fixture: ComponentFixture<MainExercise>;
+describe('Navigation', () => {
+  let component: Navigation;
+  let fixture: ComponentFixture<Navigation>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainExercise]
+      imports: [Navigation]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MainExercise);
+    fixture = TestBed.createComponent(Navigation);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,28 @@
+<nav class="navegacao-tabs">
+  <a
+    routerLink="/courses"
+    routerLinkActive="link-ativo"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Cursos</a
+  >
+  <a
+    routerLink="/articles"
+    routerLinkActive="link-ativo"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Artigos</a
+  >
+  <a
+    routerLink="/exercises"
+    routerLinkActive="link-ativo"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Exercícios</a
+  >
+  <a
+    routerLink="/community"
+    routerLinkActive="link-ativo"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Comunidade</a
+  >
+</nav>
+
+<router-outlet></router-outlet>

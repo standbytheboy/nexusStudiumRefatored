@@ -1,0 +1,23 @@
+.navegacao-tabs {
+  display: flex;
+  gap: 20px;
+  margin: .5rem 0;
+}
+
+.navegacao-tabs a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #aeb8c4;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navegacao-tabs a:hover {
+  color: #ffffff;
+}
+
+.navegacao-tabs .link-ativo {
+  color: #ffffff;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 7px;
+}
