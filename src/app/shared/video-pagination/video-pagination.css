@@ -1,18 +1,11 @@
 :host {
   display: block;
-  padding: 24px 40px;
   font-family: 'Inter', sans-serif;
   color: #E8F4FC;
 }
 
-.thumb-videos-container {
-  max-width: 100rem;
-  margin: 0 auto 0 300px;
-}
-
 .thumb-videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 30px;
-  margin-bottom: 2rem; 
 }

@@ -2,17 +2,18 @@
   display: block;
   padding: 24px 40px;
   font-family: 'Inter', sans-serif;
-  color: #E8F4FC;
+  color: #e8f4fc;
 }
 
 .popular-courses-container {
-  max-width: 100rem;
-  margin-left: 300px;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
 }
 
 .popular-courses-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
   gap: 30px;
-  margin-bottom: 2rem; 
 }

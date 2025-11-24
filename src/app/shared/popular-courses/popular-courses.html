@@ -1,6 +1,6 @@
 <section class="popular-courses-container">
-  <app-search-bar />
+    <h2>Cursos Populares</h2>
   <div class="popular-courses-grid">
-    <app-thumb-course *ngFor="let course of thumbCourse" [course]="course"></app-thumb-course>
+    <app-card *ngFor="let course of thumbCourse" [info]="course"></app-card>
   </div>
 </section>

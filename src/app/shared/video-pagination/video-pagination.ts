@@ -1,19 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ThumbVideo, ThumbVideos } from '../thumb-video/thumb-video';
 import { Pagination } from '../../layout/pagination/pagination';
+import { Card } from '../card/card';
+import { ContentItem } from '../../models/content-item/content-item-module';
 
 @Component({
   selector: 'app-video-pagination',
   standalone: true,
-  imports: [CommonModule, ThumbVideos, Pagination],
+  imports: [CommonModule, Card, Pagination],
   templateUrl: './video-pagination.html',
   styleUrls: ['./video-pagination.css']
 })
 export class VideoPagination implements OnInit {
-  
-  public allVideos: ThumbVideo[] = [
+
+  public allVideos: ContentItem[] = [
     {
       image: "https://images.unsplash.com/photo-1485846234645-a62644f84728",
       title: 'Figma: Dicas Essenciais para Iniciantes',
@@ -35,7 +35,7 @@ export class VideoPagination implements OnInit {
       title: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728', 
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
       minutesToRead: 15
     },
     {
@@ -59,7 +59,7 @@ export class VideoPagination implements OnInit {
       title: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728', 
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
       minutesToRead: 15
     },
     {
@@ -83,7 +83,7 @@ export class VideoPagination implements OnInit {
       title: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728', 
+      authorAvatar: 'https://images.unsplash.com/photo-1485846234645-a62644f84728',
       minutesToRead: 15
     },
     {
@@ -106,7 +106,7 @@ export class VideoPagination implements OnInit {
 
   @Input() videosPorPagina: number = 6;
 
-  public paginatedVideos: ThumbVideo[] = [];
+  public paginatedVideos: ContentItem[] = [];
   public paginaAtual: number = 1;
   public totalDePaginas: number = 1;
 
