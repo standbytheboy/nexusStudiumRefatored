@@ -1,0 +1,7 @@
+<app-search-bar></app-search-bar>
+<app-navigation></app-navigation>
+<h2>Mais acessados do dia</h2>
+<div class="container">
+  <app-main-section *ngFor="let info of mainExercise" [info]="info"></app-main-section>
+  <app-exercise-card></app-exercise-card>
+</div>
