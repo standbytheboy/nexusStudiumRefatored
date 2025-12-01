@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentItem } from '../../models/content-item/content-item-module';
 import { Card } from '../card/card';
@@ -109,4 +109,21 @@ export class PopularCourses {
       minutesToRead: 8
     }
   ];
+
+  @ViewChild('carouselList') carouselList!: ElementRef;
+
+  scrollLeft() {
+    // tamanho de um card aproximado + gap
+    this.carouselList.nativeElement.scrollBy({
+      left: -480,
+      behavior: 'smooth'
+    });
+  }
+
+  scrollRight() {
+    this.carouselList.nativeElement.scrollBy({
+      left: 480,
+      behavior: 'smooth'
+    });
+  }
 }

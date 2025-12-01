@@ -1,6 +1,16 @@
 <section class="popular-courses-container">
+  <div class="header-container">
     <h2>Cursos Populares</h2>
-  <div class="popular-courses-grid">
-    <app-card *ngFor="let course of thumbCourse" [info]="course"></app-card>
+
+    <div class="carousel-controls">
+      <button class="nav-btn prev" (click)="scrollLeft()">&#10094;</button>
+      <button class="nav-btn next" (click)="scrollRight()">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="popular-courses-carousel" #carouselList>
+    <div class="card-wrapper" *ngFor="let course of thumbCourse">
+      <app-card [info]="course" layout="info"></app-card>
+    </div>
   </div>
 </section>

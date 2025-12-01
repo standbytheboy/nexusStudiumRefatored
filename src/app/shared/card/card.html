@@ -11,19 +11,24 @@
     <div class="info-content">
       <h2 class="info-title">{{ info.title }}</h2>
       <p *ngIf="info.subtitle" class="info-subtitle">{{ info.subtitle }}</p>
-      <div class="info-footer">
+
+      <div
+        *ngIf="info.image || info.bgImage"
+        [ngClass]="info.image ? 'info-footer' : 'popular-footer'"
+      >
         <div class="author-info">
-          <img [src]="info.authorAvatar" alt="Avatar de {{ info.author }}" class="author-avatar" />
+          <img [src]="info.authorAvatar" [alt]="'Avatar de ' + info.author" class="author-avatar" />
           <div>
             <p class="author-name">{{ info.author }}</p>
             <p *ngIf="info.authorRole" class="author-role">{{ info.authorRole }}</p>
           </div>
         </div>
+
         <span *ngIf="info.minutesToRead" class="read-time">{{ info.minutesToRead }} min</span>
         <span *ngIf="info.answerCount" class="answer-count">Respostas: {{ info.answerCount }}</span>
+
         <span *ngIf="info.hitPercentage" class="flex">
-          Acertos:
-          <span class="hit-percentage flex">{{ info.hitPercentage }}%</span>
+          Acertos: <span class="hit-percentage flex">{{ info.hitPercentage }}%</span>
         </span>
       </div>
     </div>

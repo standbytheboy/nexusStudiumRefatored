@@ -5,15 +5,65 @@
   color: #e8f4fc;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
 .popular-courses-container {
   overflow: hidden;
 }
 
 h2 {
-  text-align: center;
+  margin: 0;
 }
 
-.popular-courses-grid {
+.popular-courses-carousel {
   display: flex;
   gap: 30px;
+  overflow-x: auto; /* Permite rolar horizontalmente */
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+}
+
+.popular-courses-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card-wrapper {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:active {
+  transform: scale(0.95);
 }
