@@ -28,6 +28,7 @@
   font-weight: 500;
   margin: 0;
   flex-grow: 1;
+  padding-bottom: 1rem;
 }
 
 .info-subtitle {
@@ -39,7 +40,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
 }
 
 .author-info {
@@ -248,17 +248,10 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.popular-title {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin: 0 0 16px 0;
-  flex-grow: 1;
-}
-
 .popular-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #3d6e91;
-  padding-top: 16px;
+  border-top: 1px solid white;
+  padding-top: 1rem;
 }
