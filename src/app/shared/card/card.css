@@ -4,8 +4,25 @@
   color: #e8f4fc;
 }
 
+/* --- Card Principal (Info Card) --- */
 .info-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
+  min-width: 28rem;
   max-width: 30rem;
+  cursor: pointer;
+  transition:
+    transform 0.6s ease,
+    background-size 1.5s ease;
 }
 
 .info-card:hover {
@@ -15,11 +32,12 @@
 .info-overlay {
   position: absolute;
   inset: 0;
-  transition: background-color 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.8s ease-in-out;
 }
 
 .info-card:hover .info-overlay {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .info-content {
@@ -40,12 +58,35 @@
   color: #e8f4fc80;
 }
 
+.info-image-container {
+  max-width: 30rem;
+  max-height: 15rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.info-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .info-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.popular-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 1rem;
+}
+
+/* --- Elementos de Autor e Métricas (Compartilhados) --- */
 .author-info {
   display: flex;
   align-items: center;
@@ -57,7 +98,7 @@
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: #ccc; /* Cor de fundo enquanto a imagem não carrega */
+  background-color: #ccc;
 }
 
 .author-name {
@@ -91,6 +132,7 @@
   gap: 10px;
 }
 
+/* --- Card de Destaque (Main Info Card) --- */
 .main-info-card {
   cursor: pointer;
   position: relative;
@@ -123,16 +165,6 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.info-image-container {
-  max-width: 30rem;
-  max-height: 15rem;
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
 .main-image-container {
   max-width: 40rem;
   max-height: 20rem;
@@ -142,8 +174,7 @@
   overflow: hidden;
 }
 
-.main-image,
-.info-image {
+.main-image {
   width: 100%;
   height: 100%;
 }
@@ -177,85 +208,4 @@
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.author-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: #ccc; /* Cor de fundo enquanto a imagem não carrega */
-}
-
-.author-name {
-  margin: 0;
-  font-weight: 500;
-}
-
-.author-role {
-  margin: 0;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-.read-time {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-.hit-percentage {
-  width: 35px;
-  height: 35px;
-  border: 2px solid;
-  border-radius: 50%;
-  font-size: 0.8rem;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-/* ---------------------------------------------------------------- */
-.info-card {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
-  overflow: hidden;
-  color: #fff;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 300px;
-  min-width: 28rem;
-  transition:
-    transform 0.6s ease,
-    background-size 1.5s ease;
-}
-
-.info-card:hover {
-  transform: scale(1.02);
-}
-
-.info-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.8s ease-in-out;
-}
-
-.info-card:hover .info-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.popular-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid white;
-  padding-top: 1rem;
 }
