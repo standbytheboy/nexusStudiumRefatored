@@ -2,10 +2,31 @@
   display: block;
   font-family: 'Inter', sans-serif;
   color: #E8F4FC;
+  width: 100%;
 }
 
 .thumb-videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 30px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 650px) {
+  .thumb-videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .thumb-videos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ajuste para sobrescrever a largura fixa do card original
+   garante que o card se estique ou encolha para caber na coluna do grid
+*/
+::ng-deep app-video-pagination app-card .info-card {
+  min-width: unset !important;
+  width: 100%;
 }
