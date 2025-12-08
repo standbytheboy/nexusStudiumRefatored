@@ -42,7 +42,6 @@ Para executar o projeto localmente, siga os passos abaixo.
     ```bash
     npm install
     ```
-    ```
 4.  Instale a CLI do Angular:
     ```bash
     npm install -g @angular/cli
