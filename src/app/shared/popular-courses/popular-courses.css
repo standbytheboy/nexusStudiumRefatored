@@ -1,9 +1,4 @@
-:host {
-  display: block;
-  padding: 24px 40px;
-  font-family: 'Inter', sans-serif;
-  color: #e8f4fc;
-}
+
 
 .header-container {
   display: flex;

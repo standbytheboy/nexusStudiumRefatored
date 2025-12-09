@@ -1,16 +1,14 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-sidebar',
-  standalone: true,
+  selector: 'app-settings-sidebar',
   imports: [CommonModule, RouterLink, RouterLinkActive],
-  templateUrl: './sidebar.html',
-  styleUrls: ['./sidebar.css']
+  templateUrl: './settings-sidebar.html',
+  styleUrl: './settings-sidebar.css',
 })
-export class SidebarComponent {
-  // Entradas para tornar o componente dinâmico
+export class SettingsSidebar {
   @Input() userName: string = 'Fulano';
   @Input() userEmail: string = 'fulano@email.com';
   @Input() avatarUrl: string = 'https://i.pravatar.cc/150?u=a042581f4e29026704d';

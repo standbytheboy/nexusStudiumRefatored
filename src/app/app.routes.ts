@@ -6,6 +6,7 @@ import { Articles } from './pages/articles/articles';
 import { Exercises } from './pages/exercises/exercises';
 import { Community } from './pages/community/community';
 import { Courses } from './pages/courses/courses';
+import { Settings } from './pages/settings/settings';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' }, // Redireciona a rota raiz para o dashboard
@@ -16,5 +17,6 @@ export const routes: Routes = [
   { path: 'exercises', component: Exercises },
   { path: 'community', component: Community },
   { path: 'courses', component: Courses },
+  { path: 'settings', component: Settings },
   // { path: 'course/:id', component: Course },  --------------- Rota para um curso específico ---------------
 ];
