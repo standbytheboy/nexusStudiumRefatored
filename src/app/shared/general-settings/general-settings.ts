@@ -3,7 +3,7 @@ import { SettingsSidebar } from "../../layout/settings-sidebar/settings-sidebar"
 
 @Component({
   selector: 'app-general-settings',
-  imports: [SettingsSidebar],
+  imports: [],
   templateUrl: './general-settings.html',
   styleUrl: './general-settings.css',
 })

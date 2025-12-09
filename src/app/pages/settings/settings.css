@@ -1,6 +1,14 @@
-main {
-    position: relative;
+section {
     margin-left: 350px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
     height: 50rem;
 }
 
+app-general-settings {
+  flex: 1; /* ocupa todo o espaço restante */
+}
