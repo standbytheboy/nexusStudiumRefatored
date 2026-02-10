@@ -1,6 +1,6 @@
-<aside class="sidebar flex">
+<aside class="sidebar flex" [class.open]="isOpen">
   <div class="profile">
-    <div class="flex">
+    <div class="flex logo-header" (click)="toggleSidebar()">
       <img src="/logomarca.png" alt="Logo Nexus Studium" width="50px" />
       <p class="nexus">Nexus Studium</p>
     </div>

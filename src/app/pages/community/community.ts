@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { SearchBar } from '../../layout/search-bar/search-bar';
-import { Navigation } from '../../layout/navigation/navigation';
+import { SidebarComponent } from '../../layout/sidebar/sidebar';
 import { MainSection, MainInfoProps } from '../../shared/main-section/main-section';
 import { CommonModule } from '@angular/common';
 import { CommunityCard } from '../../shared/community-card/community-card';
 
 @Component({
   selector: 'app-community',
-  imports: [SearchBar, Navigation, MainSection, CommonModule, CommunityCard],
+  imports: [SearchBar, SidebarComponent, MainSection, CommonModule, CommunityCard],
   templateUrl: './community.html',
   styleUrl: './community.css',
 })

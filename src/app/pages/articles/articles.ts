@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { SearchBar } from "../../layout/search-bar/search-bar";
-import { Navigation } from "../../layout/navigation/navigation";
+import { SidebarComponent } from "../../layout/sidebar/sidebar";
 import { MainSection, MainInfoProps } from '../../shared/main-section/main-section';
 import { CommonModule } from '@angular/common';
 import { ArticleCard } from "../../shared/article-card/article-card";
 
 @Component({
   selector: 'app-articles',
-  imports: [SearchBar, Navigation, MainSection, CommonModule, ArticleCard],
+  imports: [SearchBar, SidebarComponent, MainSection, CommonModule, ArticleCard],
   templateUrl: './articles.html',
   styleUrl: './articles.css',
 })

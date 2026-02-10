@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Card } from '../card/card';
 import { ContentItem } from '../../models/content-item/content-item-module';
+import { getAvatarByIndex, getImageByIndex } from '../data/mock-data';
 
 @Component({
   selector: 'app-community-card',
@@ -16,8 +17,8 @@ export class CommunityCard {
       subtitle: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(0),
+      image: getImageByIndex(0),
       minutesToRead: 10
     },
     {
@@ -25,8 +26,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(1),
+      image: getImageByIndex(1),
       minutesToRead: 15
     },
     {
@@ -34,8 +35,8 @@ export class CommunityCard {
       subtitle: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(2),
+      image: getImageByIndex(2),
       minutesToRead: 10
     },
     {
@@ -43,8 +44,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(3),
+      image: getImageByIndex(3),
       minutesToRead: 15
     },
     {
@@ -52,8 +53,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(4),
+      image: getImageByIndex(4),
       minutesToRead: 15
     },
     {
@@ -61,8 +62,8 @@ export class CommunityCard {
       subtitle: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(5),
+      image: getImageByIndex(5),
       minutesToRead: 10
     },
     {
@@ -70,8 +71,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(6),
+      image: getImageByIndex(6),
       minutesToRead: 15
     },
     {
@@ -79,8 +80,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(7),
+      image: getImageByIndex(7),
       minutesToRead: 15
     },
     {
@@ -88,8 +89,8 @@ export class CommunityCard {
       subtitle: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(1),
+      image: getImageByIndex(8),
       minutesToRead: 10
     },
     {
@@ -97,8 +98,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(2),
+      image: getImageByIndex(9),
       minutesToRead: 15
     },
     {
@@ -106,8 +107,8 @@ export class CommunityCard {
       subtitle: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(3),
+      image: getImageByIndex(10),
       minutesToRead: 10
     },
     {
@@ -115,8 +116,8 @@ export class CommunityCard {
       subtitle: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(4),
+      image: getImageByIndex(11),
       minutesToRead: 15
     },
     {
@@ -124,8 +125,8 @@ export class CommunityCard {
       subtitle: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
-      image: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(5),
+      image: getImageByIndex(12),
       minutesToRead: 10
     },
 

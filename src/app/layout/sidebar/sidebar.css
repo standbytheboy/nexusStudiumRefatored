@@ -24,6 +24,10 @@
     font-weight: bold;
 }
 
+.logo-header {
+    cursor: pointer;
+}
+
 .sidebar {
     box-sizing: border-box;
     background-color: #2A5D84;
@@ -126,6 +130,11 @@
 
 @media (max-width: 1200px) {
   .sidebar {
-    display: none;
+    display: none !important;
+  }
+
+  .sidebar.open {
+    display: flex !important;
+    z-index: 1000;
   }
 }

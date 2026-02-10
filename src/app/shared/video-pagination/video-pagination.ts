@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Pagination } from '../../layout/pagination/pagination';
 import { Card } from '../card/card';
 import { ContentItem } from '../../models/content-item/content-item-module';
+import { getAvatarByIndex, getImageByIndex } from '../data/mock-data';
 
 @Component({
   selector: 'app-video-pagination',
@@ -15,91 +16,91 @@ export class VideoPagination implements OnInit {
 
   public allVideos: ContentItem[] = [
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(0),
       title: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(0),
       minutesToRead: 10
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(1),
       title: 'Como Manter o Foco em Home Office',
       author: 'Marcos Borges',
       authorRole: 'Scrum Master',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(1),
       minutesToRead: 8
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(2),
       title: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(2),
       minutesToRead: 15
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(3),
       title: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(3),
       minutesToRead: 10
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(4),
       title: 'Como Manter o Foco em Home Office',
       author: 'Marcos Borges',
       authorRole: 'Scrum Master',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(4),
       minutesToRead: 8
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(5),
       title: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(5),
       minutesToRead: 15
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(6),
       title: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(6),
       minutesToRead: 10
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(7),
       title: 'Como Manter o Foco em Home Office',
       author: 'Marcos Borges',
       authorRole: 'Scrum Master',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(7),
       minutesToRead: 8
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(8),
       title: 'Dicas de Como se Tornar um Bom Lider',
       author: 'Leandro Silva',
       authorRole: 'Designer UX',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(1),
       minutesToRead: 15
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(9),
       title: 'Figma: Dicas Essenciais para Iniciantes',
       author: 'Ana Clara',
       authorRole: 'Product Designer',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(2),
       minutesToRead: 10
     },
     {
-      image: "https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987",
+      image: getImageByIndex(10),
       title: 'Como Manter o Foco em Home Office',
       author: 'Marcos Borges',
       authorRole: 'Scrum Master',
-      authorAvatar: 'https://images.unsplash.com/photo-1764418659027-b1da026826ec?q=80&w=987',
+      authorAvatar: getAvatarByIndex(3),
       minutesToRead: 8
     },
   ];
